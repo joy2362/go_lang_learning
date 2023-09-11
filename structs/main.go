@@ -7,7 +7,6 @@ func main()  {
 	fmt.Println(welcome)
 
 	//no inheritance in go lang , No super or parent class
-
 	//capital name user for public variable
 
 	joy := User{"joy" , "test@test.com" , true, 24}

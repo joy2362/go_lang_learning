@@ -6,13 +6,14 @@ import (
 	"net/http"
 )
 
-const URL = "https://lco.dev"
+const URL = "https://cameronjournal.com/?feed=rss2"
 
 func main() {
 	welcome := "welcome"
 	fmt.Println(welcome)
  
-	res , err :=http.Get(URL)
+	res , err := http.Get(URL)
+
 	if err != nil {
 		panic(err)
 	}
@@ -23,12 +24,13 @@ func main() {
 	defer res.Body.Close()
 
 	dataByte , err := io.ReadAll(res.Body)
+	
 	if err != nil {
 		panic(err)
 	}
 
 	content := string(dataByte)
 
-	fmt.Println(content)
+	fmt.Println(content	)
 
 }

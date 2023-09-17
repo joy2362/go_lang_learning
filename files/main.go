@@ -7,19 +7,19 @@ import (
 )
 
 func main() {
-	welcome := "welcome"
-	fmt.Println(welcome)
+	welcome := "welcome";
+	fmt.Println(welcome);
 
-	content := "hello world"
+	content := "hello world";
 
-	file , err :=os.Create("./some.txt")
+	file , err := os.Create("./some.txt")
+	os.
 
 	checkNillError(err)
 
 	length , err := io.WriteString(file, content)
 
 	checkNillError(err)
-
 
 	fmt.Println(length)
 
@@ -30,7 +30,6 @@ func main() {
 }
 
 //read file 
-
 func readFile(fileName string){
 	dataByte , err := os.ReadFile(fileName)
 

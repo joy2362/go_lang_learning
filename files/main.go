@@ -13,7 +13,6 @@ func main() {
 	content := "hello world";
 
 	file , err := os.Create("./some.txt")
-	os.
 
 	checkNillError(err)
 
